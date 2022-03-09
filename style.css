@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+}
+
+/*UTILITIES*/
+.login{
+    margin-top: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.t-center{
+    text-align: center;
+}
+/*CONTENT*/
+.container{
+    width: 100%;
+}
