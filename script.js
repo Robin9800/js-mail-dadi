@@ -1,4 +1,4 @@
-//Associal una costante "mailButton" al bottone nel file html
+//Associamo una costante "mailButton" al bottone nel file html
 const mailButton = document.querySelector('.login > button');
 //definiamo un evento al "click" del button
 mailButton.addEventListener("click", function () {
@@ -12,18 +12,28 @@ mailButton.addEventListener("click", function () {
     //Definiamo il valore dell'elemento "Input"
     const inputValue = emailInput.value;
 
-    //Associamo un ciclo
+    //Definiamo una variabile che indica se l'email è stata trovavata o meno
+    let isLogged = false
+    //Creiamo un ciclo
     for (let i=0 ; i < emailList.length ; i++){
 
-        if(inputValue === emailList){
-        alert('Ti sei loggato');
-        break;
-
-    }   else{
-        alert('Devi prima registrarti');
-        break;
+        if(inputValue === emailList[i]){
+            isLogged = true;
+            break;
+        }  
     }
-}
+
+    //Se alla fine del ciclo isFound è ancora false allora...
+    if(isLogged === false){
+        alert('Devi prima registrarti');
+
+    }else{
+        alert('Ti sei loggato');
+
+
         
+    }
+    
+
 
 })
