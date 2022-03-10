@@ -30,6 +30,7 @@ body{
 }
 /*CONTENT*/
 .container{
+    border-radius: 20px;
     margin: 40px;
     background-color: greenyellow;
     width: 50%;
