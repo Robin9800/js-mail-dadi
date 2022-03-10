@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: goldenrod;
 }
 
 /*UTILITIES*/
@@ -17,16 +18,29 @@ body{
     width: 20%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 .t-center{
     text-align: center;
 }
+.a-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
 /*CONTENT*/
 .container{
-    width: 100%;
+    margin: 40px;
+    background-color: greenyellow;
+    width: 50%;
+    display: flex;
 }
 
 #dice{
-    margin-top: 30px;
+    margin: 30px;
+}
+.login h1{
+    margin-bottom: 20px;
+    width: 200px;
+    align-self: center;
 }
