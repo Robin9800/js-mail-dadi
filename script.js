@@ -12,7 +12,7 @@ mailButton.addEventListener("click", function () {
     //Definiamo il valore dell'elemento "Input"
     const inputValue = emailInput.value;
 
-    //Definiamo una variabile che indica se l'email è stata trovavata o meno
+    //Definiamo una variabile che indica se l'email è stata trovavata o meno.
     let isLogged = false
     //Creiamo un ciclo
     for (let i=0 ; i < emailList.length ; i++){
@@ -29,11 +29,27 @@ mailButton.addEventListener("click", function () {
 
     }else{
         alert('Ti sei loggato');
-
-
-        
     }
-    
 
+})
+//Facciamo tirare due dai all'utente (uno per l'utente e uno per il pc).
 
+//Associamo all'id "dice" un evento "click".
+document.getElementById('dice').addEventListener('click', function(){
+
+    //Definiamo una costante per l'utente e una per il pc. Ognuno genererà un numero casuale.
+    const user = 1 + Math.floor(Math.random()*6)
+    const pc = 1 + Math.floor(Math.random()*6)
+
+    //Creaiamo la condizione per cui se il valore di "user" è più alto o meno si vince o si perde.
+    if(user > pc){
+        alert('Hai vinto');
+        
+
+    }else if(user < pc){
+        alert('Hai perso');
+
+    }else{
+        alert('Pareggio!');
+    }
 })

@@ -7,6 +7,8 @@
 body{
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*UTILITIES*/
@@ -23,4 +25,8 @@ body{
 /*CONTENT*/
 .container{
     width: 100%;
+}
+
+#dice{
+    margin-top: 30px;
 }
